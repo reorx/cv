@@ -1,0 +1,3 @@
+[submodule "jsoncv"]
+	path = jsoncv
+	url = https://github.com/reorx/jsoncv.git
