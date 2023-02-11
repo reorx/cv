@@ -131,7 +131,7 @@
     },
     {
       "language": "Chinese",
-      "fluency": "Native speaker",
+      "fluency": "Native",
       "summary": ""
     }
   ],
@@ -227,7 +227,7 @@
     {
       "name": "Substance",
       "url": "https://substance.reorx.com/",
-      "description": "An HTML-to-Markdown extractor. It provides a framework for locating and purifying the actual content in HTML, giving complete control over the extraction process and allowing for careful tuning for every website.",
+      "description": "An HTML-to-Markdown extractor that gives complete control over the extraction process and allowing for careful tuning for every website.",
       "keywords": [],
       "startDate": "",
       "endDate": ""
@@ -252,9 +252,9 @@
     }
   ],
   "meta": {
-    "name": "",
-    "canonical": "https://github.com/reorx/cv",
-    "version": "1.1.0",
+    "name": "Xiao_Meng-CV",
+    "canonical": "https://cv.reorx.com",
+    "version": "v1.1.0",
     "lastModified": "2023-02-11T17:01:41+08:00Z"
   }
 }
