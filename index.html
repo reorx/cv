@@ -24,16 +24,15 @@
     }
     body > footer {
       font-family: system-ui, sans-serif;
+      font-size: 14px;
       width: calc(210mm - 20mm);
-      padding: 5mm 10mm;
+      padding: 6mm 10mm;
       margin: 0 auto;
       border: 1px solid #ccc;
       border-bottom: 0;
       display: flex;
       justify-content: center;
-    }
-    footer > span {
-      margin: 0 .5em;
+      gap: 10px;
     }
 
     @media print {
@@ -44,6 +43,7 @@
   </style>
   <link rel="stylesheet" href="/jsoncv/src/scss/cv-base.css">
   <link rel="stylesheet" href="/jsoncv/src/themes/<%= theme %>/index.scss">
+  <link rel="stylesheet" href="/mobile.scss">
 </head>
 <body>
   <div class="cv-container">
