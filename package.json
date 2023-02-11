@@ -1,0 +1,14 @@
+{
+  "name": "cv",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "jsoncv": "file:jsoncv"
+  }
+}

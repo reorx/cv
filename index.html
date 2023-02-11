@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= fn.getCVTitle(cv) %></title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Note: if you add additional styles to this class, you should remove them in `@media print` to ensure .cv-container remains styleless when printing */
+    .cv-container {
+      border: 1px solid #ccc;
+      margin: 10mm auto;
+    }
+    body > footer {
+      font-family: system-ui, sans-serif;
+      width: calc(210mm - 20mm);
+      padding: 5mm 10mm;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-bottom: 0;
+      display: flex;
+      justify-content: center;
+    }
+    footer > span {
+      margin: 0 .5em;
+    }
+
+    @media print {
+      body > footer {
+        display: none;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/jsoncv/src/scss/cv-base.css">
+  <link rel="stylesheet" href="/jsoncv/src/themes/<%= theme %>/index.scss">
+</head>
+<body>
+  <div class="cv-container">
+    <%- include('jsoncv/src/themes/' + theme + '/index', locals) %>
+  </div>
+
+  <footer>
+    <a href="/<%= fn.getCVTitle(cv) %>.pdf" download>Download PDF</a>
+    <span>•</span>
+    <a href="https://github.com/reorx/cv" target="_blank">Source code</a>
+    <span>•</span>
+    <a href="https://reorx.com" target="_blank">reorx.com</a>
+  </footer>
+
+  <% if (!isProduction) { %>
+  <!-- import theme ejs to enable HMR -->
+  <script type="module">
+    import './jsoncv/src/themes/<%= theme %>/index.ejs'
+  </script>
+  <% } %>
+</body>
+</html>
