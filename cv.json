@@ -158,8 +158,8 @@
         "Rebuilt front-end and back-end of the website with the latest technology and systematic modules."
       ],
       "keywords": [
-        "Gatsby",
         "React",
+        "Gatsby",
         "Chart.js",
         "Netlify CMS"
       ],
@@ -199,12 +199,12 @@
       "name": "Loki",
       "description": "A deployment automation system for large-scale applications on thousands of servers.",
       "highlights": [
-        "Designed and implemented the front-end of the system, collaborating with teammates to deliver the scheduling and data collection modules."
+        "Designed and implemented the front-end of the system, collaborating with teammates to deliver the scheduling and data collection modules of the back-end."
       ],
       "keywords": [
+        "Python",
         "Gevent",
         "OpenTSDB",
-        "Grafana",
         "jQuery"
       ],
       "startDate": "2014-08-01",
