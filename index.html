@@ -2,8 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title><%= fn.getCVTitle(cv) %></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="<%= meta.description %>">
+  <meta property="og:title" content="<%= meta.title %>">
+  <meta property="og:description" content="<%= meta.description %>">
+  <meta property="og:url" content="<%= meta.url %>">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" property="twitter:card" content="summary">
+  <meta name="twitter:creator" property="twitter:creator" content="@novoreorx">
+  <meta name="twitter:title" property="twitter:title" content="<%= meta.title %>">
+  <meta name="twitter:description" property="twitter:description" content="<%= meta.description %>">
+
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title><%= fn.getCVTitle(cv) %></title>
   <style>
     /* Note: if you add additional styles to this class, you should remove them in `@media print` to ensure .cv-container remains styleless when printing */
     .cv-container {
