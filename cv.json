@@ -1,0 +1,223 @@
+{
+  "basics": {
+    "name": "Xiao Meng",
+    "email": "novoreorx@gmail.com",
+    "phone": "(929) 266 8017",
+    "url": "https://reorx.com",
+    "location": {
+      "city": "Hangzhou",
+      "countryCode": "China"
+    },
+    "summary": "Crafting tools and products to help people think and create.\n",
+    "profiles": []
+  },
+  "education": [
+    {
+      "institution": "Wuhan University, School of Computer Science",
+      "url": "https://www.whu.edu.cn/",
+      "area": "Computer Science and Technology",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2009-01-01",
+      "endDate": "2013-01-01",
+      "courses": []
+    }
+  ],
+  "work": [
+    {
+      "name": "Dine",
+      "position": "Technical Director",
+      "url": "https://dinehq.com",
+      "startDate": "2020-06-01",
+      "summary": "- Worked with design and development teams to make custom software solutions, and completed a total of three projects.\n- Deployed and delivered the website to CDN and dedicated servers.\n- Troubleshot and resolved any issues that arose from the customers.\n- Set up and maintained the tools and processes used for CI/CD pipelines involving GitLab and Git Flow."
+    },
+    {
+      "name": "Yuansuan, Inc.",
+      "position": "Software Development Lead",
+      "url": "https://www.yuansuan.cn/",
+      "startDate": "2021-03-01",
+      "endDate": "2022-01-14",
+      "summary": "- Managed a team of 10 software developers, overseeing their work and providing guidance and support.\n- Designed system architecture for a SaaS platform, ensuring technical feasibility and scalability.\n- Collaborated with interdisciplinary teams, including product managers, designers, and QA engineers, to deliver high-quality software products on time and within budget.\n- Provided technical support on-call, troubleshooting and resolving software issues from the end-users."
+    },
+    {
+      "name": "Sixteen Markets, Inc.",
+      "position": "Co-Founder & CTO",
+      "url": "https://16financial.com/",
+      "startDate": "2016-05-01",
+      "endDate": "2020-03-01",
+      "summary": "- **Team Management**: Expanded developer team from 6 to 18 people in 3 years, with roles in front-end, back-end, testing, and operation. Led team and coordinated schedules/tasks, hosted daily/periodic meetings, and set team rules/regulations.\n- **System Architecture**: Designed service-level protocol with Protobuf/gRPC for inter-service communication. Designed external API specification with JSON Schema and OpenAPI.\n- **Software Development**: Implemented access layer gateway with OpenResty/Lua for bidirectional conversion between internal Protobuf/gRPC and external HTTP API. Developed/maintained accounting/clearing systems, internal admin systems, and other microservices using Python and Go. Developed tools for data structure definition, API code generation, and documentation generation.\n- **Development Process Management**: Developed GitFlow-based Git workflow and set up Atlassian applications for project management, version control, and CI/CD. Designed/developed Python packaging format and Ansible-based automated release solution."
+    },
+    {
+      "name": "Wandou Labs",
+      "position": "Site Reliability Engineer",
+      "url": "https://www.wandoujia.com/",
+      "startDate": "2014-02-01",
+      "endDate": "2016-03-01",
+      "summary": "- Monitored and analyzed system performance to identify potential issues or areas for improvement.\n- Participated in on-call rotations to respond to alerts and system failures and support other teams.\n- Developed automated solutions and internal tools, improving the reliability, scalability, and maintainability of systems and services.\n- Collaborated with developer teams to optimize the design and implementation of new/existing systems and services."
+    },
+    {
+      "name": "Sohu.com",
+      "position": "Back-end Developer",
+      "url": "https://www.sohu.com/",
+      "startDate": "2013-07-01",
+      "endDate": "2014-02-01",
+      "summary": "- Developed and maintained back-end services and APIs for a variety of applications and platforms using languages such as Python and PHP.\n- Explored best practices for building API services using various databases such as MySQL, MongoDB, and Apache Cassandra.\n- Collaborated with front-end developers to integrate UI features with the back-end APIs."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Back-end Dev",
+      "level": "Expert - 10 years",
+      "keywords": [
+        "Python",
+        "Django",
+        "Go",
+        "gRPC",
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "name": "Front-end Dev",
+      "level": "Advanced - 6 years",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Webpack",
+        "CSS",
+        "SCSS"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "level": "Advanced - 4 years",
+      "keywords": [
+        "PRD",
+        "Agile",
+        "Scrum",
+        "Waterfall"
+      ]
+    },
+    {
+      "name": "Web Design",
+      "level": "Intermediate - 4 years",
+      "keywords": [
+        "Figma",
+        "Axure",
+        "Sketch"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Beginner - 2 years",
+      "keywords": [
+        "React Hooks",
+        "React Query",
+        "Zustand",
+        "Next.js"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Yuansuan Cloud for Business",
+      "description": "A hybrid cloud platform for computer-aided engineering in HPC clusters.",
+      "keywords": [
+        "Go",
+        "Kubernetes",
+        "HPC",
+        "WebRTC"
+      ],
+      "startDate": "2021-06-01",
+      "endDate": "2021-10-30",
+      "highlights": [
+        "Collected and analyzed customer requirements, designed the on-premises system, managed the developer team, and delivered the product in a limited time."
+      ]
+    },
+    {
+      "name": "G7.com.cn",
+      "description": "The official website of G7.",
+      "keywords": [
+        "Gatsby",
+        "React",
+        "Chart.js",
+        "Netlify CMS"
+      ],
+      "startDate": "2020-05-01",
+      "endDate": "2020-10-01",
+      "url": "https://www.g7.com.cn/",
+      "highlights": [
+        "Rebuilt front-end and back-end of the website with the latest technology and systematic modules."
+      ]
+    },
+    {
+      "name": "Cashier",
+      "description": "A clearing system for the online stock trading brokerage service.",
+      "keywords": [
+        "Go",
+        "gRPC",
+        "RethinkDB"
+      ],
+      "startDate": "2016-10-01",
+      "endDate": "2019-10-01",
+      "highlights": [
+        "Designed and implemented the whole system from the ground up. The challenge was to learn trading/clearing rules from scratch and create an API platform for introducing brokers, which is the first of its kind in the industry."
+      ]
+    },
+    {
+      "name": "Backbone API Docs",
+      "description": "An API documentation platform like readme.com.",
+      "keywords": [
+        "Django",
+        "OpenResty",
+        "JWT"
+      ],
+      "startDate": "2017-03-01",
+      "endDate": "2017-11-01",
+      "highlights": [
+        "Developed the front-end, back-end, and toolchains for the product. Wrote customer-oriented documents, including API references, JSON Schema definitions, and Markdown user guides."
+      ]
+    },
+    {
+      "name": "Loki",
+      "description": "A deployment automation system for large-scale applications on thousands of servers.",
+      "keywords": [
+        "Gevent",
+        "OpenTSDB",
+        "Grafana",
+        "jQuery"
+      ],
+      "startDate": "2014-08-01",
+      "endDate": "2016-01-01",
+      "highlights": [
+        "Designed and implemented the front-end of the system, collaborating with teammates to deliver the scheduling and data collection modules."
+      ]
+    }
+  ],
+  "sideProjects": [
+    {
+      "name": "httpstat",
+      "description": "A CLI tool to show HTTP statistics in a beautiful and clear way.\n\n[Link](https://github.com/reorx/httpstat)",
+      "keywords": []
+    },
+    {
+      "name": "sui2",
+      "description": "A self-hosted Startpage app that supports keyboard navigation and PWA.\n\n[Link](https://github.com/reorx/sui2), [Demo](https://reorx.github.io/sui2/)",
+      "keywords": []
+    },
+    {
+      "name": "python-terminal-color",
+      "description": "A drop-in single file Python library for printing colors in terminal.\n\n[Link](https://github.com/reorx/python-terminal-color)",
+      "keywords": []
+    },
+    {
+      "name": "Deptest",
+      "description": "A Python testing framework that can control the execution order of the test units.\n\n[Link](https://github.com/reorx/deptest)",
+      "keywords": []
+    },
+    {
+      "name": "Obsidian paste image rename",
+      "description": "An Obsidian plugin that provides an intuitive interface to rename pasted images and other attachments.\n\n[Link](https://github.com/reorx/obsidian-paste-image-rename)\n\n",
+      "keywords": []
+    }
+  ]
+}
