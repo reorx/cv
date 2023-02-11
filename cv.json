@@ -65,8 +65,8 @@
       "studyType": "Bachelor of Engineering",
       "startDate": "2009-01-01",
       "endDate": "2013-01-01",
-      "score": "2.43",
-      "courses": []
+      "courses": [],
+      "score": "2.43"
     }
   ],
   "skills": [
@@ -123,18 +123,6 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "CEFR level: C1",
-      "summary": "Possesses a strong command of the English language, with excellent reading, writing, and comprehension skills. Demonstrated by the ability to quickly learn new knowledge from English-only resources, write professional technical documents, and collaborate seamlessly with native English speakers."
-    },
-    {
-      "language": "Chinese",
-      "fluency": "Native",
-      "summary": ""
-    }
-  ],
   "projects": [
     {
       "name": "Yuansuan Cloud for Business",
@@ -149,7 +137,11 @@
         "WebRTC"
       ],
       "startDate": "2021-06-01",
-      "endDate": "2021-10-30"
+      "endDate": "2021-10-30",
+      "roles": [
+        "Team Lead",
+        "Core Developer"
+      ]
     },
     {
       "name": "G7.com.cn",
@@ -165,7 +157,11 @@
       ],
       "startDate": "2020-05-01",
       "endDate": "2020-10-01",
-      "url": "https://www.g7.com.cn/"
+      "url": "https://www.g7.com.cn/",
+      "roles": [
+        "Frontend Developer",
+        "DevOps"
+      ]
     },
     {
       "name": "Cashier",
@@ -179,7 +175,11 @@
         "RethinkDB"
       ],
       "startDate": "2016-10-01",
-      "endDate": "2019-10-01"
+      "endDate": "2019-10-01",
+      "roles": [
+        "Core Developer",
+        "Product Manager"
+      ]
     },
     {
       "name": "Backbone API Docs",
@@ -193,7 +193,10 @@
         "JWT"
       ],
       "startDate": "2017-03-01",
-      "endDate": "2017-11-01"
+      "endDate": "2017-11-01",
+      "roles": [
+        "Full-stack Developer"
+      ]
     },
     {
       "name": "Loki",
@@ -208,41 +211,44 @@
         "jQuery"
       ],
       "startDate": "2014-08-01",
-      "endDate": "2016-01-01"
+      "endDate": "2016-01-01",
+      "roles": [
+        "Full-stack Developer"
+      ]
     }
   ],
   "sideProjects": [
     {
       "name": "httpstat",
-      "url": "https://github.com/reorx/httpstat",
       "description": "A CLI tool to show HTTP statistics in a beautiful and clear way.",
-      "keywords": []
+      "keywords": [],
+      "url": "https://github.com/reorx/httpstat"
     },
     {
       "name": "jsoncv",
-      "url": "https://jsoncv.reorx.com/",
       "description": "A toolkit to construct your Curriculum Vitae/Résumé using JSON and produce stylish HTML/PDF documents.",
-      "keywords": []
+      "keywords": [],
+      "url": "https://jsoncv.reorx.com/"
     },
     {
       "name": "Substance",
-      "url": "https://substance.reorx.com/",
       "description": "An HTML-to-Markdown extractor that gives complete control over the extraction process and allowing for careful tuning for every website.",
       "keywords": [],
+      "url": "https://substance.reorx.com/",
       "startDate": "",
       "endDate": ""
     },
     {
       "name": "sui2",
-      "url": "https://github.com/reorx/sui2",
       "description": "A self-hosted Startpage app that supports keyboard navigation and PWA.",
-      "keywords": []
+      "keywords": [],
+      "url": "https://github.com/reorx/sui2"
     },
     {
       "name": "Obsidian paste image rename",
-      "url": "https://github.com/reorx/obsidian-paste-image-rename",
       "description": "An Obsidian plugin that provides an intuitive interface to rename pasted images and other attachments.\n\n",
-      "keywords": []
+      "keywords": [],
+      "url": "https://github.com/reorx/obsidian-paste-image-rename"
     },
     {
       "name": "Deptest",
@@ -251,10 +257,22 @@
       "keywords": []
     }
   ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "CEFR level: C1",
+      "summary": "Possesses a strong command of the English language, with excellent reading, writing, and comprehension skills. Demonstrated by the ability to quickly learn new knowledge from English-only resources, write professional technical documents, and collaborate seamlessly with native English speakers."
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Native",
+      "summary": ""
+    }
+  ],
   "meta": {
     "name": "Xiao_Meng-CV",
     "canonical": "https://cv.reorx.com",
-    "version": "v1.1.0",
-    "lastModified": "2023-02-11T17:01:41+08:00Z"
+    "version": "v1.2.0",
+    "lastModified": "2023-02-12T02:57:18+08:00Z"
   }
 }
