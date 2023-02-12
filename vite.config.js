@@ -1,8 +1,4 @@
-import fs from 'fs';
-import {
-  extname,
-  resolve,
-} from 'path';
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import { ViteEjsPlugin } from 'vite-plugin-ejs';
 import { viteSingleFile } from 'vite-plugin-singlefile';
@@ -21,9 +17,6 @@ renderData.meta = {
   description: "Xiao Meng's CV",
   url: "https://cv.reorx.com"
 }
-
-const pdfFiles = fs.readdirSync('public').filter(file => extname(file) === '.pdf')
-renderData.pdfURL = '/' + pdfFiles[0]
 
 
 export default defineConfig({
