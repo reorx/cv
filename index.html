@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#fff" />
   <meta name="description" content="<%= meta.description %>">
   <meta property="og:title" content="<%= meta.title %>">
   <meta property="og:description" content="<%= meta.description %>">
@@ -27,6 +27,9 @@
   <link rel="stylesheet" href="/jsoncv/src/themes/<%= theme %>/index.scss">
   <link rel="stylesheet" href="/index.scss">
   <style>
+    body {
+      font-family: system-ui, sans-serif;
+    }
     body > footer {
       font-size: 14px;
       width: calc(210mm - 20mm);
