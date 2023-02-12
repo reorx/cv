@@ -22,4 +22,6 @@ const html = fs.readFileSync('dist/index.html', 'utf8');
 const titleRegex = /<title>(.*)<\/title>/;
 const title = html.match(titleRegex)[1];
 
+console.log("call generate pdf")
 generatePDF(html, `dist/${title}.pdf`)
+console.log("call end")
