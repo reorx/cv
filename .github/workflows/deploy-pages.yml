@@ -23,6 +23,9 @@ jobs:
       - run: npm install
       - run: npm run build
 
+      # pdf
+      - run: node generate_pdf.js
+
       - name: Publish
         uses: cloudflare/pages-action@1
         with:
