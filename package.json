@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-pdf": "node generate_pdf.js"
   },
   "dependencies": {
     "jsoncv": "file:jsoncv"
