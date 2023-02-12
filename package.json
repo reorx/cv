@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "build-pdf": "node generate_pdf.mjs",
-    "all": "npm run build-pdf && npm run build"
+    "all": "rm -rf public/*.pdf && npm run build-pdf && npm run build"
   },
   "dependencies": {
     "jsoncv": "file:jsoncv"

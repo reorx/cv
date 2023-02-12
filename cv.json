@@ -66,7 +66,7 @@
       "startDate": "2009-01-01",
       "endDate": "2013-01-01",
       "courses": [],
-      "score": "2.43"
+      "score": "2.43/4"
     }
   ],
   "skills": [
@@ -272,7 +272,7 @@
   "meta": {
     "name": "Xiao_Meng-CV",
     "canonical": "https://cv.reorx.com",
-    "version": "v1.2.0",
+    "version": "v1.2.1",
     "lastModified": "2023-02-12T02:57:18+08:00Z"
   }
 }
