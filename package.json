@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "build-pdf": "node generate_pdf.js"
+    "build-pdf": "node generate_pdf.mjs"
   },
   "dependencies": {
     "jsoncv": "file:jsoncv"
