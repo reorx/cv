@@ -19,7 +19,11 @@ renderData.isProduction = process.env.NODE_ENV === 'production'
 renderData.meta = {
   title: "Xiao Meng",
   description: "Xiao Meng's CV",
-  url: "https://cv.reorx.com"
+  url: "https://cv.reorx.com",
+  twitter: {
+    card: "summary",
+    username: "novoreorx",
+  }
 }
 
 const pdfFiles = fs.readdirSync('public').filter(file => extname(file) === '.pdf')

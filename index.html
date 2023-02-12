@@ -4,15 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#fff" />
-  <meta name="description" content="<%= meta.description %>">
-  <meta property="og:title" content="<%= meta.title %>">
-  <meta property="og:description" content="<%= meta.description %>">
-  <meta property="og:url" content="<%= meta.url %>">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" property="twitter:card" content="summary">
-  <meta name="twitter:creator" property="twitter:creator" content="@novoreorx">
-  <meta name="twitter:title" property="twitter:title" content="<%= meta.title %>">
-  <meta name="twitter:description" property="twitter:description" content="<%= meta.description %>">
+  <%- include('jsoncv/src/templates/meta', meta) %>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title><%= fn.getCVTitle(cv) %></title>
