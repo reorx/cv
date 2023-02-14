@@ -1,3 +1,27 @@
+:root {
+  --color-primary: #2A3FFB;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+body > footer {
+  font-size: 14px;
+  width: calc(210mm - 20mm);
+  padding: 6mm 10mm;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media print {
+  body > footer {
+    display: none;
+  }
+}
 
 /* mobile */
 

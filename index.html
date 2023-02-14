@@ -18,32 +18,6 @@
   <link rel="stylesheet" href="/jsoncv/src/scss/cv-base.css">
   <link rel="stylesheet" href="/jsoncv/src/themes/<%= theme %>/index.scss">
   <link rel="stylesheet" href="/index.scss">
-  <style>
-    :root {
-      /* override primary color */
-      <%= varNamePrimaryColor %>: <%= primaryColor %>;
-    }
-    body {
-      font-family: system-ui, sans-serif;
-    }
-    body > footer {
-      font-size: 14px;
-      width: calc(210mm - 20mm);
-      padding: 6mm 10mm;
-      margin: 0 auto;
-      border: 1px solid #ccc;
-      border-bottom: 0;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    @media print {
-      body > footer {
-        display: none;
-      }
-    }
-  </style>
 </head>
 <body>
   <div class="cv-container">
