@@ -15,6 +15,7 @@ const dataFilename = process.env.DATA_FILENAME || './cv.json'
 const data = require(dataFilename)
 const renderData = getRenderData(data)
 renderData.theme = process.env.THEME || 'reorx'
+renderData.primaryColor = process.env.PRIMARY_COLOR || '#2A3FFB'
 renderData.isProduction = process.env.NODE_ENV === 'production'
 renderData.meta = {
   title: "Xiao Meng",

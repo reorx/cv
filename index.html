@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="/jsoncv/src/themes/<%= theme %>/index.scss">
   <link rel="stylesheet" href="/index.scss">
   <style>
+    :root {
+      /* override primary color */
+      <%= varNamePrimaryColor %>: <%= primaryColor %>;
+    }
     body {
       font-family: system-ui, sans-serif;
     }
