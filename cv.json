@@ -17,7 +17,7 @@
       "position": "Technical Director",
       "url": "https://dinehq.com",
       "startDate": "2020-06-01",
-      "summary": "- Worked with design and development teams to make custom software solutions, and completed a total of three projects.\n- Deployed and delivered the website to CDN and dedicated servers.\n- Troubleshot and resolved any issues that arose from the customers.\n- Set up and maintained the tools and processes used for CI/CD pipelines involving GitLab and Git Flow.",
+      "summary": "- Worked with design and development teams to deliver custom software solutions.\n- Developed and deployed client websites on CDN and dedicated servers.\n- Troubleshot and resolved any issues raised by clients.\n- Set up and maintained the tools and processes for CI/CD pipelines using GitLab and Git Flow.",
       "highlights": []
     },
     {
@@ -35,16 +35,16 @@
       "url": "https://16financial.com/",
       "startDate": "2016-05-01",
       "endDate": "2020-03-01",
-      "summary": "- **Team Management**: Expanded developer team from 6 to 18 people in 3 years, with roles in front-end, back-end, testing, and operation. Led team and coordinated schedules/tasks, hosted daily/periodic meetings, and set team rules/regulations.\n- **System Architecture**: Designed service-level protocol with Protobuf/gRPC for inter-service communication. Designed external API specification with JSON Schema and OpenAPI.\n- **Software Development**: Implemented access layer gateway with OpenResty/Lua for bidirectional conversion between internal Protobuf/gRPC and external HTTP API. Developed/maintained accounting/clearing systems, internal admin systems, and other microservices using Python and Go. Developed tools for data structure definition, API code generation, and documentation generation.\n- **Development Process Management**: Developed GitFlow-based Git workflow and set up Atlassian applications for project management, version control, and CI/CD. Designed/developed Python packaging format and Ansible-based automated release solution.",
+      "summary": "- **Team Management**: Expanded development team from 6 to 18 people in 3 years, with roles in front-end, back-end, testing, and operations. Managed team and coordinated schedules/tasks, hosted daily/regular meetings, and set team rules/regulations.\n- **System Architecture**: Designed service-level protocol using Protobuf/gRPC for inter-service communication. Designed external API specification using JSON Schema and OpenAPI.\n- **Software Development**: Implemented access layer gateway using OpenResty/Lua for bi-directional conversion between internal Protobuf/gRPC and external HTTP API. Developed/maintained accounting/clearing systems, internal admin systems, and other microservices using Python and Go. Developed tools for data structure definition, API code generation, and documentation generation.\n- **Development Process Management**: Developed GitFlow-based Git workflow and set up Atlassian applications for project management, version control, and CI/CD. Designed/developed Python packaging format and Ansible-based automated release solution.",
       "highlights": []
     },
     {
       "name": "Wandou Labs",
       "position": "Site Reliability Engineer",
       "url": "https://www.wandoujia.com/",
-      "startDate": "2014-02-01",
+      "startDate": "2014-03-01",
       "endDate": "2016-03-01",
-      "summary": "- Monitored and analyzed system performance to identify potential issues or areas for improvement.\n- Participated in on-call rotations to respond to alerts and system failures and support other teams.\n- Developed automated solutions and internal tools, improving the reliability, scalability, and maintainability of systems and services.\n- Collaborated with developer teams to optimize the design and implementation of new/existing systems and services.",
+      "summary": "- Monitored and analyzed system performance to identify potential problems or areas for improvement.\n- Participated in on-call rotations to respond to alerts and system outages and support other teams.\n- Developed automated solutions and internal tools to improve the reliability, scalability, and maintainability of systems and services.\n- Worked with development teams to optimize the design and implementation of new/existing systems and services.",
       "highlights": []
     },
     {
@@ -53,7 +53,7 @@
       "url": "https://www.sohu.com/",
       "startDate": "2013-07-01",
       "endDate": "2014-02-01",
-      "summary": "- Developed and maintained back-end services and APIs for a variety of applications and platforms using languages such as Python and PHP.\n- Explored best practices for building API services using various databases such as MySQL, MongoDB, and Apache Cassandra.\n- Collaborated with front-end developers to integrate UI features with the back-end APIs.",
+      "summary": "- Developed and maintained back-end services and APIs for a variety of applications and platforms using languages such as Python and PHP.\n- Researched best practices for building API services using various databases such as MySQL, MongoDB, and Apache Cassandra.\n- Collaborated with front-end developers to integrate UI features with the back-end APIs.",
       "highlights": []
     }
   ],
@@ -63,10 +63,10 @@
       "url": "https://www.whu.edu.cn/",
       "area": "Computer Science and Technology",
       "studyType": "Bachelor of Engineering",
-      "startDate": "2009-01-01",
-      "endDate": "2013-01-01",
-      "courses": [],
-      "score": "2.43/4"
+      "startDate": "2009-09-01",
+      "endDate": "2013-06-30",
+      "score": "2.43/4",
+      "courses": []
     }
   ],
   "skills": [
@@ -121,6 +121,18 @@
         "Zustand",
         "Next.js"
       ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "CEFR level: C1",
+      "summary": "Possess a strong command of the English language, with excellent reading, writing, and comprehension skills. Demonstrated by the ability to quickly learn new knowledge from English-only resources, write professional technical documents, and collaborate seamlessly with native English speakers."
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Native",
+      "summary": ""
     }
   ],
   "projects": [
@@ -220,35 +232,35 @@
   "sideProjects": [
     {
       "name": "httpstat",
+      "url": "https://github.com/reorx/httpstat",
       "description": "A CLI tool to show HTTP statistics in a beautiful and clear way.",
-      "keywords": [],
-      "url": "https://github.com/reorx/httpstat"
+      "keywords": []
     },
     {
       "name": "jsoncv",
+      "url": "https://jsoncv.reorx.com/",
       "description": "A toolkit to construct your Curriculum Vitae/Résumé using JSON and produce stylish HTML/PDF documents.",
-      "keywords": [],
-      "url": "https://jsoncv.reorx.com/"
+      "keywords": []
     },
     {
       "name": "Substance",
+      "url": "https://substance.reorx.com/",
       "description": "An HTML-to-Markdown extractor that gives complete control over the extraction process and allowing for careful tuning for every website.",
       "keywords": [],
-      "url": "https://substance.reorx.com/",
       "startDate": "",
       "endDate": ""
     },
     {
       "name": "sui2",
+      "url": "https://github.com/reorx/sui2",
       "description": "A self-hosted Startpage app that supports keyboard navigation and PWA.",
-      "keywords": [],
-      "url": "https://github.com/reorx/sui2"
+      "keywords": []
     },
     {
       "name": "Obsidian paste image rename",
+      "url": "https://github.com/reorx/obsidian-paste-image-rename",
       "description": "An Obsidian plugin that provides an intuitive interface to rename pasted images and other attachments.\n\n",
-      "keywords": [],
-      "url": "https://github.com/reorx/obsidian-paste-image-rename"
+      "keywords": []
     },
     {
       "name": "Deptest",
@@ -257,22 +269,10 @@
       "keywords": []
     }
   ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "CEFR level: C1",
-      "summary": "Possess a strong command of the English language, with excellent reading, writing, and comprehension skills. Demonstrated by the ability to quickly learn new knowledge from English-only resources, write professional technical documents, and collaborate seamlessly with native English speakers."
-    },
-    {
-      "language": "Chinese",
-      "fluency": "Native",
-      "summary": ""
-    }
-  ],
   "meta": {
     "name": "Xiao_Meng-CV",
     "canonical": "https://cv.reorx.com",
-    "version": "v1.2.1",
-    "lastModified": "2023-02-12T02:57:18+08:00Z"
+    "version": "v1.3.0",
+    "lastModified": "2023-02-16T18:57:11+08:00Z"
   }
 }
