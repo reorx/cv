@@ -65,7 +65,7 @@
       "studyType": "Bachelor of Engineering",
       "startDate": "2009-09-01",
       "endDate": "2013-06-30",
-      "score": "2.43/4",
+      "score": "2.98/4",
       "courses": []
     }
   ],
@@ -272,7 +272,7 @@
   "meta": {
     "name": "Xiao_Meng-CV",
     "canonical": "https://cv.reorx.com",
-    "version": "v1.3.0",
+    "version": "v1.3.1",
     "lastModified": "2023-02-16T18:57:11+08:00Z"
   }
 }
