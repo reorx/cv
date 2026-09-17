@@ -8,20 +8,28 @@ at jsoncv instead of forking this repository directly.
 
 ### Prepare environment
 
+Node version is pinned in `mise.toml`, package manager is pnpm
+(version pinned by the `packageManager` field in `package.json`).
+
 ```
-npm i
+mise install
+pnpm i
 ```
+
+`jsoncv` is a git submodule and a pnpm workspace package, so its dependencies
+are installed together with the root ones. After updating the submodule, run
+`pnpm i` again and commit the updated `pnpm-lock.yaml`.
 
 ### Run dev server
 
 ```
-npm run dev
+pnpm dev
 ```
 
 ### Deploy site
 
 ```
 wrangler pages project create cv
-npm run build
+pnpm build
 wrangler pages publish dist
 ```

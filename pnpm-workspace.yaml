@@ -1,0 +1,22 @@
+packages:
+  - jsoncv
+
+# jsoncv/src is imported by relative path (vite.config.js, index.html),
+# so its dependencies must be installed into jsoncv/node_modules.
+
+onlyBuiltDependencies:
+  - esbuild
+  - puppeteer
+
+# neither is needed: @parcel/watcher only speeds up `sass --watch`,
+# core-js' postinstall script just prints a donation notice
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - core-js
+
+overrides:
+  # vite >= 4.3 refuses to require() an ESM package while bundling a CJS
+  # vite.config.js, which breaks `import '@iconify/json/json/mdi.json'`
+  # inside jsoncv/src/lib/icons.js. Pin to the version this project was
+  # built with until the config is migrated to ESM.
+  vite: 4.1.1

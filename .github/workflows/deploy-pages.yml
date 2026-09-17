@@ -15,16 +15,21 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
+      # pnpm version comes from the "packageManager" field in package.json
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: 24.18.0  # keep in sync with mise.toml
+          cache: 'pnpm'
 
-      - run: npm install
-      - run: npm run build
+      - run: pnpm install --frozen-lockfile
+        env:
+          # the PDF is built locally and committed, so CI has no use for Chromium
+          PUPPETEER_SKIP_DOWNLOAD: '1'
+      - run: pnpm run build
 
       # pdf
-      # - run: npm run build-pdf
+      # - run: pnpm run build-pdf
 
       - name: Publish
         uses: cloudflare/pages-action@1

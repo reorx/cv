@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 import { launch } from 'puppeteer';
 
-import cv from './cv.json' assert { type: 'json' };
+import cv from './cv.json' with { type: 'json' };
 
 // import { chromium } from 'playwright-chromium';
 

@@ -3,15 +3,19 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
+  "packageManager": "pnpm@10.14.0",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "build-pdf": "node generate_pdf.mjs",
-    "all": "rm -rf public/*.pdf && npm run build-pdf && npm run build"
+    "all": "rm -rf public/*.pdf && pnpm run build-pdf && pnpm run build"
   },
   "dependencies": {
-    "jsoncv": "file:jsoncv"
+    "jsoncv": "workspace:*"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.33",
