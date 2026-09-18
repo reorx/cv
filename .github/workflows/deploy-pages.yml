@@ -39,4 +39,5 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # the action's own default is "latest", which would jump to the next major on release
           wranglerVersion: "4"
-          command: pages deploy dist --project-name=cv --branch=master
+          # the action installs wrangler via `pnpm add`, which dirties package.json and the lockfile
+          command: pages deploy dist --project-name=cv --branch=master --commit-dirty=true
