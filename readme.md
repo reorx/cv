@@ -33,3 +33,11 @@ wrangler pages project create cv
 pnpm build
 wrangler pages publish dist
 ```
+
+### Export Markdown
+
+```
+pnpm build-md            # writes tmp/<meta.name>-<version>.md from cv.json
+node generate_md.mjs out # or write to another directory
+pnpm test
+```
