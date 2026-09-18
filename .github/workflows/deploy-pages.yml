@@ -10,14 +10,15 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # pinned so the ubuntu-latest -> 26.04 migration (2026-10-19) doesn't change the build env silently
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           submodules: true
       # pnpm version comes from the "packageManager" field in package.json
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 24.18.0  # keep in sync with mise.toml
           cache: 'pnpm'
@@ -32,10 +33,10 @@ jobs:
       # - run: pnpm run build-pdf
 
       - name: Publish
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: cv
-          directory: dist
-          branch: master
+          # the action's own default is "latest", which would jump to the next major on release
+          wranglerVersion: "4"
+          command: pages deploy dist --project-name=cv --branch=master
