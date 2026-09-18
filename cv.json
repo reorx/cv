@@ -6,17 +6,29 @@
     "url": "https://reorx.com",
     "summary": "Crafting tools and products to help people think and create.",
     "location": {
-      "city": "Hangzhou",
+      "city": "Hubei",
       "countryCode": "China"
     },
     "profiles": []
   },
   "work": [
     {
+      "name": "Anyun AI",
+      "position": "Co-founder",
+      "url": "https://www.anyunai.com/",
+      "startDate": "2023-06",
+      "summary": "- Owned all technical decision-making for the company, from architecture and technology choices to engineering process and tooling.\n- Led product planning and implementation end to end, and ran deployment and operations for the SaaS services: CI/CD, monitoring, incident response and postmortems.\n- Worked directly with customers on delivery: rolled out edge devices and the SaaS at school sites, integrated the platform with each customer's cameras, audio terminals and partner systems, and turned customer feedback into fixes and features.",
+      "highlights": [],
+      "location": "",
+      "description": "",
+      "endDate": ""
+    },
+    {
       "name": "Dine",
       "position": "Technical Director",
       "url": "https://dinehq.com",
       "startDate": "2020-06-01",
+      "endDate": "2024-10",
       "summary": "- Worked with design and development teams to deliver custom software solutions.\n- Developed and deployed client websites on CDN and dedicated servers.\n- Troubleshot and resolved any issues raised by clients.\n- Set up and maintained the tools and processes for CI/CD pipelines using GitLab and Git Flow.",
       "highlights": []
     },
@@ -121,12 +133,19 @@
         "Zustand",
         "Next.js"
       ]
+    },
+    {
+      "name": "Agentic Coding",
+      "level": "Advanced - 2 years",
+      "summary": "Over the past two years I have kept pace with agentic coding, working each new technique into my daily workflow. A common pattern is to hand everything to the agent, then be disappointed by the result and watch the codebase grow harder to maintain. My experience has been the opposite, I find that agents free me from tedious, repetitive work, so I can put my time into thinking and making decisions.\n\nWriting code by hand is easy to sink into: I could stay in flow for hours and still feel fresh. With agents, I run several projects or features in parallel, and each one keeps pulling me back into the loop to supervise, review, and answer questions. Most of my day now goes to thinking, which is far more demanding than writing code. But judging by the quality of what I ship, I'm convinced this is the right way to work.\n\nOut of this practice came out a complete methodology for building software with agents:\n\n- **Spec first**: Every feature starts with a planning phase that produces a written spec covering requirements and system architecture. The agent is a sparring partner here, not the author. I use the discussion to refine requirements, weigh architectural trade-offs, and surface gaps and failure modes, iterating until the spec is final.\n- **Hands-off execution**: I break the spec into concrete implementation steps and hand them to a top-tier frontier model. This is the only phase where I deliberately stay out of the way. I review and accept the result afterwards. For complex tasks, I ask the agent to write a session summary along with the git commit.\n- **BDD as a hard constraint**: Agents must implement in behavior-driven style, so every stated requirement is backed by a test. This is where agents pay off most, since they excel at repetitive work: extensive unit tests with mocks, and at times entire mocked services for integration testing.\n- **Smoke tests as living documentation**: Before a major release, the agent smoke-tests the feature and must leave behind a runbook showing how to drive the UI with tools such as Agent Browser or Computer Use. These scripts live in the repo and run alongside the code.\n- **Context discipline with herdr**: I work mostly in the terminal and keep each session's context tightly bounded. When it grows too large, I use herdr, an agent multiplexer, to hand off subtasks or research to fresh agents that report their conclusions back.\n- **Remote control with paseo**: Away from my desk, I connect from my phone to a paseo daemon on my workstation and direct Claude Code or Codex remotely.\n",
+      "keywords": [],
+      "isDetailed": true
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "CEFR level: C1",
+      "fluency": "IELTS: 7.0",
       "summary": "Possess a strong command of the English language, with excellent reading, writing, and comprehension skills. Demonstrated by the ability to quickly learn new knowledge from English-only resources, write professional technical documents, and collaborate seamlessly with native English speakers."
     },
     {
@@ -136,6 +155,50 @@
     }
   ],
   "projects": [
+    {
+      "name": "Tenderbuddy",
+      "description": "An agent system for Chinese public-procurement bidding that turns a tender document (RFP) into a compliant, submission-ready bid.",
+      "highlights": [
+        "Designed and built the system end to end: it parses the tender into structured requirements and scoring criteria, derives the bid outline 1:1 from the tender's own composition checklist, writes each section based on the company's knowledge base, and simulates the evaluation committee to score the draft. Output standard DOCX suitable for formal submission."
+      ],
+      "keywords": [
+        "NodeJS",
+        "LangChain",
+        "Durable Execution",
+        "ETL",
+        "Layout Detection"
+      ],
+      "startDate": "2025-08",
+      "endDate": "2026-09",
+      "roles": [
+        "Architect",
+        "Full-stack Developer"
+      ],
+      "url": "https://app.toubiaodashi.com/",
+      "entity": "",
+      "type": ""
+    },
+    {
+      "name": "Campus Watch",
+      "description": "A computer-vision campus safety platform for K-12 schools, in production across 20+ schools with 250+ monitored zones.",
+      "highlights": [
+        "Designed and built the system as two tiers: detection at the edge, all business logic in the cloud. Rockchip NPU edge controllers run YOLO object detection over the school's camera streams (8–64 channels per unit) and audio terminals flag keywords, shouting and SOS. The SaaS in the cloud turns their raw events into deduplicated alerts, tracks each incident from triage to resolution, and serves multiple schools as tenants."
+      ],
+      "keywords": [
+        "YOLO",
+        "Django",
+        "Task Queue"
+      ],
+      "startDate": "2023-07",
+      "endDate": "2026-05",
+      "roles": [
+        "Architect",
+        "Full-stack Developer"
+      ],
+      "url": "https://anyunai.com/",
+      "entity": "",
+      "type": ""
+    },
     {
       "name": "Yuansuan Cloud for Business",
       "description": "A hybrid cloud platform for computer-aided engineering in HPC clusters.",
@@ -169,11 +232,11 @@
       ],
       "startDate": "2020-05-01",
       "endDate": "2020-10-01",
-      "url": "https://www.g7.com.cn/",
       "roles": [
         "Frontend Developer",
         "DevOps"
-      ]
+      ],
+      "url": "https://www.g7.com.cn/"
     },
     {
       "name": "Cashier",
@@ -191,23 +254,6 @@
       "roles": [
         "Core Developer",
         "Product Manager"
-      ]
-    },
-    {
-      "name": "Backbone API Docs",
-      "description": "An API documentation platform like readme.com.",
-      "highlights": [
-        "Developed the front-end, back-end, and toolchains for the product. Wrote customer-oriented documents, including API references, JSON Schema definitions, and Markdown user guides."
-      ],
-      "keywords": [
-        "Django",
-        "OpenResty",
-        "JWT"
-      ],
-      "startDate": "2017-03-01",
-      "endDate": "2017-11-01",
-      "roles": [
-        "Full-stack Developer"
       ]
     },
     {
@@ -231,9 +277,9 @@
   ],
   "sideProjects": [
     {
-      "name": "httpstat",
-      "url": "https://github.com/reorx/httpstat",
-      "description": "A CLI tool to show HTTP statistics in a beautiful and clear way.",
+      "name": "VocalFlow",
+      "url": "https://vocalflow.app/",
+      "description": "A voice dictation app for macOS that turns speech into polished, ready-to-send text in real time. Built solo as a complete commercial SaaS: native client, low-latency WebSocket streaming backend with AI refinement, subscription billing, and cross-device sync.",
       "keywords": []
     },
     {
@@ -243,17 +289,15 @@
       "keywords": []
     },
     {
+      "name": "httpstat",
+      "url": "https://github.com/reorx/httpstat",
+      "description": "A CLI tool to show HTTP statistics in a beautiful and clear way.",
+      "keywords": []
+    },
+    {
       "name": "Substance",
       "url": "https://substance.reorx.com/",
       "description": "An HTML-to-Markdown extractor that gives complete control over the extraction process and allowing for careful tuning for every website.",
-      "keywords": [],
-      "startDate": "",
-      "endDate": ""
-    },
-    {
-      "name": "sui2",
-      "url": "https://github.com/reorx/sui2",
-      "description": "A self-hosted Startpage app that supports keyboard navigation and PWA.",
       "keywords": []
     },
     {
@@ -272,7 +316,7 @@
   "meta": {
     "name": "Xiao_Meng-CV",
     "canonical": "https://cv.reorx.com",
-    "version": "v1.3.1",
-    "lastModified": "2023-02-16T18:57:11+08:00Z"
+    "version": "v1.4.0",
+    "lastModified": "2026-09-18T23:38:55+08:00Z"
   }
 }
