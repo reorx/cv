@@ -17,9 +17,73 @@ body > footer {
   gap: 10px;
 }
 
+/* Detailed skills are boxed in the primary color to set them apart, and their
+   long summary is collapsed behind a "My opinion" toggle (see detailed-skill.js).
+   Only the border marks the box: generate_pdf.mjs prints without backgrounds. */
+
+.skills-section .skill.-detailed {
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 14px 16px;
+
+  .summary-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: .4em 0;
+    font: inherit;
+    color: var(--color-primary);
+    cursor: pointer;
+
+    &::after {
+      content: " \25B8";
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* added by detailed-skill.js, so the summary stays visible without JS */
+  &.-collapsible {
+    .summary-toggle {
+      display: inline-block;
+    }
+    .summary {
+      display: none;
+    }
+  }
+
+  &.-expanded {
+    .summary {
+      display: block;
+    }
+    .summary-toggle::after {
+      content: " \25BE";
+    }
+  }
+}
+
 @media print {
   body > footer {
     display: none;
+  }
+
+  /* the summary is the whole point of a detailed skill on paper: show it in
+     full, just smaller, and drop the toggle that can no longer be clicked */
+  .skills-section .skill.-detailed {
+    break-inside: avoid;
+    page-break-inside: avoid;
+
+    .summary-toggle,
+    &.-collapsible .summary-toggle {
+      display: none;
+    }
+    .summary,
+    &.-collapsible .summary {
+      display: block;
+      font-size: 12px;
+    }
   }
 }
 
