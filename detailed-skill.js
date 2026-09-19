@@ -1,7 +1,7 @@
 // A detailed skill carries a long summary that would bury the rest of the CV,
 // so collapse it behind a toggle. The summary stays in the DOM: print styles in
 // index.scss expand it again, and without this script it simply renders as usual.
-const TOGGLE_LABEL = 'My opinion'
+const TOGGLE_LABEL = 'See my opinion'
 
 document.querySelectorAll('.skill.-detailed').forEach((skill, index) => {
   const summary = skill.querySelector('.summary')
