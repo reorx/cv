@@ -14,7 +14,7 @@
     "build-pdf": "node generate_pdf.mjs",
     "build-md": "node generate_md.mjs",
     "test": "node --test 'test/**/*.test.mjs'",
-    "all": "rm -rf public/*.pdf && pnpm run build-pdf && pnpm run build"
+    "all": "pnpm run build && rm -rf public/*.pdf && pnpm run build-pdf && pnpm run build"
   },
   "dependencies": {
     "jsoncv": "workspace:*"
